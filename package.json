@@ -64,8 +64,7 @@
     "src"
   ],
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
