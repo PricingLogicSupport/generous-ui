@@ -84,13 +84,44 @@ async function startServer(port) {
   return child;
 }
 
-async function checkPage(page, label, screenshotName) {
+async function checkPage(page, label, screenshotName, options = {}) {
   const metrics = await page.evaluate(() => ({
     horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
     primaryButtons: document.querySelectorAll(".gui-button-primary").length,
     bodyTextLength: document.body.innerText.length,
     width: window.innerWidth,
-    height: window.innerHeight
+    height: window.innerHeight,
+    smallTargets: [
+      ...document.querySelectorAll(
+        'button, a[href], input:not([type="hidden"]), select, textarea, [role="button"], [tabindex]:not([tabindex="-1"])'
+      )
+    ]
+      .filter((element) => {
+        const rect = element.getBoundingClientRect();
+        const style = getComputedStyle(element);
+        const hiddenControl = Number(style.opacity) === 0 && rect.width <= 2 && rect.height <= 2;
+        return (
+          !hiddenControl &&
+          rect.width > 0 &&
+          rect.height > 0 &&
+          style.display !== "none" &&
+          style.visibility !== "hidden" &&
+          !element.closest("[hidden], [aria-hidden='true']")
+        );
+      })
+      .map((element) => {
+        const rect = element.getBoundingClientRect();
+        return {
+          tag: element.tagName.toLowerCase(),
+          label: (element.innerText || element.getAttribute("aria-label") || element.getAttribute("title") || "")
+            .replace(/\s+/g, " ")
+            .trim()
+            .slice(0, 80),
+          width: Math.round(rect.width),
+          height: Math.round(rect.height)
+        };
+      })
+      .filter((target) => target.width < 44 || target.height < 44)
   }));
 
   const screenshotPath = path.join(outputDir, screenshotName);
@@ -100,6 +131,7 @@ async function checkPage(page, label, screenshotName) {
     label,
     screenshot: path.relative(root, screenshotPath),
     screenshotBytes: screenshot.byteLength,
+    enforceTargets: Boolean(options.enforceTargets),
     ...metrics
   };
 }
@@ -130,7 +162,22 @@ async function main() {
       if (message.type() === "error") consoleErrors.push(`[mobile] ${message.text()}`);
     });
     await mobile.goto(url, { waitUntil: "networkidle" });
-    results.push(await checkPage(mobile, "mobile", "mobile-full.png"));
+    results.push(await checkPage(mobile, "mobile", "mobile-full.png", { enforceTargets: true }));
+
+    const narrow = await browser.newPage({ viewport: { width: 320, height: 1200 }, isMobile: true });
+    narrow.on("console", (message) => {
+      if (message.type() === "error") consoleErrors.push(`[mobile-320] ${message.text()}`);
+    });
+    await narrow.goto(url, { waitUntil: "networkidle" });
+    results.push(await checkPage(narrow, "mobile-320", "mobile-320-full.png", { enforceTargets: true }));
+
+    const zoomed = await browser.newPage({ viewport: { width: 390, height: 1200 }, isMobile: true });
+    zoomed.on("console", (message) => {
+      if (message.type() === "error") consoleErrors.push(`[mobile-zoom] ${message.text()}`);
+    });
+    await zoomed.goto(url, { waitUntil: "networkidle" });
+    await zoomed.addStyleTag({ content: ":root { font-size: 125% !important; }" });
+    results.push(await checkPage(zoomed, "mobile-zoom", "mobile-zoom-full.png", { enforceTargets: true }));
 
     const rtl = await browser.newPage({ viewport: { width: 1280, height: 900 } });
     rtl.on("console", (message) => {
@@ -152,6 +199,14 @@ async function main() {
     if (result.primaryButtons !== 1) failures.push(`${result.label}: expected 1 primary button, found ${result.primaryButtons}`);
     if (result.bodyTextLength < 500) failures.push(`${result.label}: page text looks unexpectedly sparse`);
     if (result.screenshotBytes < 5000) failures.push(`${result.label}: screenshot looks unexpectedly small`);
+    if (result.enforceTargets && result.smallTargets.length) {
+      failures.push(
+        `${result.label}: ${result.smallTargets.length} visible interactive targets below 44px: ${result.smallTargets
+          .slice(0, 8)
+          .map((target) => `${target.tag} "${target.label || "(unlabelled)"}" ${target.width}x${target.height}`)
+          .join(", ")}`
+      );
+    }
   }
 
   failures.push(...consoleErrors.map((error) => `console error: ${error}`));

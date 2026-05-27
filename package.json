@@ -1,6 +1,6 @@
 {
   "name": "generous-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "An opinionated, adaptable React UI library built around generous clarity.",
   "license": "MIT",

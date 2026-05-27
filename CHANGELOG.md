@@ -2,6 +2,11 @@
 
 All notable changes to Generous UI will be documented in this file.
 
+## 0.1.2 - 2026-05-27
+
+- Improved mobile target sizing for switches, calendars, breadcrumb links, app chrome links, filter summaries, and input groups.
+- Expanded visual checks to cover 320px mobile, zoomed mobile text, and visible interactive targets below 44px.
+
 ## 0.1.1 - 2026-05-27
 
 - Fixed published dependency metadata so consuming React apps use their own `react` and `react-dom` copies instead of installing duplicate React runtimes.

@@ -572,7 +572,7 @@ select {
   border: 0;
   border-radius: 0;
   box-shadow: none;
-  min-height: calc(var(--gui-hit-target) - 2px);
+  min-height: var(--gui-hit-target);
   padding-left: 0;
   padding-right: 0;
 }
@@ -587,7 +587,7 @@ select {
   color: var(--gui-ink-muted);
   display: inline-flex;
   font-weight: 800;
-  min-height: calc(var(--gui-hit-target) - 2px);
+  min-height: var(--gui-hit-target);
   padding: 0 var(--gui-space-3);
   white-space: nowrap;
 }
@@ -682,9 +682,9 @@ select {
   border-radius: 999px;
   cursor: pointer;
   display: inline-flex;
-  height: 36px;
+  height: var(--gui-hit-target);
   justify-content: flex-start;
-  min-width: 64px;
+  min-width: 72px;
   outline: none;
   padding: 2px;
   transition:
@@ -697,9 +697,9 @@ select {
   border-radius: 999px;
   box-shadow: 0 1px 2px rgb(17 17 17 / 20%);
   display: block;
-  height: 28px;
+  height: 36px;
   transition: transform 120ms ease;
-  width: 28px;
+  width: 36px;
 }
 
 .gui-switch[aria-checked="true"] {
@@ -2366,7 +2366,7 @@ select {
   color: var(--gui-ink);
   cursor: pointer;
   font-weight: 800;
-  min-height: 36px;
+  min-height: var(--gui-hit-target);
   padding: 0 var(--gui-space-3);
 }
 
@@ -2413,7 +2413,7 @@ select {
   font: inherit;
   font-weight: 800;
   gap: var(--gui-space-2);
-  min-height: 36px;
+  min-height: var(--gui-hit-target);
   padding: 0 var(--gui-space-3);
 }
 
@@ -3055,7 +3055,10 @@ select {
 .gui-calendar-grid {
   display: grid;
   gap: var(--gui-space-1);
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(var(--gui-hit-target), 1fr));
+  overflow-x: auto;
+  padding-bottom: 2px;
+  width: 100%;
 }
 
 .gui-calendar-weekday {
@@ -3063,6 +3066,7 @@ select {
   font-size: 0.82rem;
   font-weight: 850;
   min-height: 28px;
+  min-width: var(--gui-hit-target);
   text-align: center;
 }
 
@@ -3074,6 +3078,7 @@ select {
   cursor: pointer;
   font-weight: 800;
   min-height: var(--gui-hit-target);
+  min-width: var(--gui-hit-target);
 }
 
 .gui-calendar-grid button[aria-pressed="true"] {
@@ -3330,9 +3335,12 @@ select {
 }
 
 .gui-app-brand {
+  align-items: center;
   color: var(--gui-ink);
+  display: inline-flex;
   font-size: 1.25rem;
   font-weight: 900;
+  min-height: var(--gui-hit-target);
   outline: none;
   text-decoration: none;
 }
@@ -3400,8 +3408,11 @@ select {
 }
 
 .gui-app-footer-links a {
+  align-items: center;
   color: var(--gui-ink);
+  display: inline-flex;
   font-weight: 750;
+  min-height: var(--gui-hit-target);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
@@ -3687,8 +3698,11 @@ select {
 }
 
 .gui-breadcrumbs a {
+  align-items: center;
   color: var(--gui-accent);
+  display: inline-flex;
   font-weight: 750;
+  min-height: var(--gui-hit-target);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
