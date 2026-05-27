@@ -384,7 +384,7 @@ function Workbench() {
               items={[
                 {
                   value: "#006adc",
-                  title: "Wii blue",
+                  title: "Clear blue",
                   description: "Clear, familiar, and direct.",
                   meta: <span className="demo-swatch" style={{ background: "#006adc" }} />
                 },
@@ -641,7 +641,7 @@ function Workbench() {
                         value={accent}
                         onValueChange={setAccent}
                         options={[
-                          { value: "#006adc", label: "Wii blue" },
+                          { value: "#006adc", label: "Clear blue" },
                           { value: "#b25400", label: "Amber" },
                           { value: "#0f7b62", label: "Green" }
                         ]}
@@ -1010,7 +1010,7 @@ function Workbench() {
               {
                 label: "Accent",
                 before: "Default blue",
-                after: accent === "#006adc" ? "Wii blue" : accent === "#b25400" ? "Amber" : "Green"
+                after: accent === "#006adc" ? "Clear blue" : accent === "#b25400" ? "Amber" : "Green"
               },
               {
                 label: "Async space",
@@ -1299,7 +1299,7 @@ function Workbench() {
                 description: "Accent ink over accent background.",
                 action: (
                   <ContrastPair
-                    label="Wii blue action"
+                    label="Clear blue action"
                     foreground="#ffffff"
                     background="#006adc"
                     ratio="5.5:1"
