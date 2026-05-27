@@ -1,18 +1,20 @@
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm } from "node:fs/promises";
 import { spawn } from "node:child_process";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const workDir = await mkdtemp(path.join(tmpdir(), "generous-ui-package-"));
+const tempDir = await mkdtemp(path.join(tmpdir(), "generous-ui-package-"));
+const workDir = path.join(tempDir, "consumer");
+const packDir = path.join(tempDir, "packed");
 let tarballPath;
 
 function run(command, args, options = {}) {
   return new Promise((resolve, reject) => {
     const child = spawn(command, args, {
       cwd: options.cwd ?? root,
-      env: { ...process.env, ...options.env },
+      env: { ...process.env, npm_config_dry_run: "false", ...options.env },
       stdio: ["ignore", "pipe", "pipe"]
     });
     let stdout = "";
@@ -37,9 +39,11 @@ async function fileText(relativePath) {
 }
 
 try {
-  const { stdout } = await run("npm", ["pack", "--json"], { cwd: root });
+  await mkdir(workDir);
+  await mkdir(packDir);
+  const { stdout } = await run("npm", ["pack", "--json", "--pack-destination", packDir], { cwd: root });
   const [pack] = JSON.parse(stdout);
-  tarballPath = path.join(root, pack.filename);
+  tarballPath = path.join(packDir, pack.filename);
 
   await run("npm", ["init", "-y"], { cwd: workDir });
   await run("npm", ["install", "--ignore-scripts", "--no-audit", "--no-fund", tarballPath], { cwd: workDir });
@@ -98,6 +102,5 @@ try {
   console.log(`package smoke ok: ${pack.filename}`);
   console.log(`workspace: ${workDir}`);
 } finally {
-  if (tarballPath) await rm(tarballPath, { force: true });
-  if (process.env.KEEP_GENEROUS_UI_SMOKE !== "1") await rm(workDir, { recursive: true, force: true });
+  if (process.env.KEEP_GENEROUS_UI_SMOKE !== "1") await rm(tempDir, { recursive: true, force: true });
 }

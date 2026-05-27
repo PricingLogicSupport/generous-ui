@@ -49,7 +49,7 @@
     "./registry": "./generous-ui.registry.json"
   },
   "bin": {
-    "generous-ui": "./bin/generous-ui.mjs"
+    "generous-ui": "bin/generous-ui.mjs"
   },
   "files": [
     "BRAND.md",
