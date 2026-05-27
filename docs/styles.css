@@ -1,0 +1,242 @@
+.demo-layout {
+  align-items: start;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  margin-bottom: 24px;
+}
+
+.demo-main,
+.demo-side {
+  display: grid;
+  gap: 28px;
+}
+
+.demo-section-heading {
+  align-items: end;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.demo-section-heading h2,
+.demo-form-panel h2,
+.demo-side h2,
+.demo-loading-region h2 {
+  font-size: 1.35rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.demo-section-heading p,
+.demo-form-panel p,
+.demo-side p,
+.demo-loading-region p {
+  color: var(--gui-ink-muted);
+  line-height: 1.45;
+  margin: 6px 0 0;
+}
+
+.demo-choice-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.demo-form-panel {
+  border-top: 2px solid var(--gui-ink);
+  display: grid;
+  gap: 18px;
+  padding-top: 22px;
+}
+
+.demo-swatch {
+  background: var(--gui-accent);
+  border-radius: 5px;
+  height: 24px;
+  width: 24px;
+}
+
+.demo-skeleton-stack {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.demo-loading-region {
+  border-top: 2px solid var(--gui-ink);
+  padding-top: 18px;
+}
+
+.demo-utility-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.demo-wide-panel {
+  border-top: 2px solid var(--gui-ink);
+  display: grid;
+  gap: 22px;
+  margin: 28px 0;
+  padding-top: 22px;
+}
+
+.demo-wide-panel h2 {
+  font-size: 1.55rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.demo-wide-panel p {
+  color: var(--gui-ink-muted);
+  line-height: 1.45;
+  margin: 6px 0 0;
+}
+
+.demo-stat-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.demo-chart-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.demo-registry-summary {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.demo-registry-tools {
+  align-items: end;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
+}
+
+.demo-registry-browser {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
+}
+
+.demo-registry-list {
+  border-top: 2px solid var(--gui-ink);
+  display: grid;
+  margin-top: 18px;
+  max-height: 420px;
+  overflow: auto;
+}
+
+.demo-registry-list button {
+  align-items: center;
+  background: var(--gui-surface);
+  border: 0;
+  border-bottom: 1px solid var(--gui-border);
+  color: var(--gui-ink);
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  min-height: 58px;
+  padding: 12px 14px;
+  text-align: start;
+}
+
+.demo-registry-list button:hover,
+.demo-registry-list button:focus-visible {
+  background: var(--gui-surface-strong);
+}
+
+.demo-registry-list button:focus-visible {
+  outline: 3px solid var(--gui-focus);
+  outline-offset: -3px;
+}
+
+.demo-registry-list button[aria-pressed="true"] {
+  box-shadow: inset 5px 0 0 var(--gui-accent);
+}
+
+.demo-registry-list strong,
+.demo-registry-list small {
+  display: block;
+}
+
+.demo-registry-list small,
+.demo-registry-list p {
+  color: var(--gui-ink-muted);
+}
+
+.demo-registry-list p {
+  margin: 0;
+  padding: 14px;
+}
+
+.demo-registry-detail {
+  align-content: start;
+  display: grid;
+  gap: 16px;
+}
+
+.demo-registry-package-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.demo-aspect-fill {
+  align-items: center;
+  color: var(--gui-ink-muted);
+  display: flex;
+  font-weight: 850;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.demo-side .gui-inset-notice {
+  grid-template-columns: 1fr;
+}
+
+.demo-side .gui-inset-action {
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .demo-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-registry-browser {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .demo-section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .demo-choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-stat-grid,
+  .demo-registry-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-registry-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

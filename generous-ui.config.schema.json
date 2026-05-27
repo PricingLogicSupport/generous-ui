@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://generous-ui.dev/schema/config.json",
+  "title": "Generous UI project config",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string",
+      "description": "Project root that registry files are copied into."
+    },
+    "targetDir": {
+      "type": "string",
+      "description": "Legacy alias for target."
+    },
+    "base": {
+      "type": "string",
+      "description": "Base directory for mapped component, pattern, lib, theme, and style files."
+    },
+    "baseDir": {
+      "type": "string",
+      "description": "Legacy alias for base."
+    },
+    "componentsDir": {
+      "type": "string"
+    },
+    "patternsDir": {
+      "type": "string"
+    },
+    "libDir": {
+      "type": "string"
+    },
+    "themeDir": {
+      "type": "string"
+    },
+    "stylesDir": {
+      "type": "string"
+    },
+    "withCss": {
+      "type": "boolean",
+      "description": "Copy the shared stylesheet when adding components."
+    }
+  }
+}

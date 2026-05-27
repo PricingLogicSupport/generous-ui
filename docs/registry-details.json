@@ -1,0 +1,2771 @@
+{
+  "name": "generous-ui",
+  "version": "0.1.0",
+  "css": "src/styles.css",
+  "components": [
+    {
+      "name": "ActionBar",
+      "type": "pattern",
+      "files": [
+        "src/patterns/action-bar.tsx"
+      ],
+      "closure": [
+        "src/patterns/action-bar.tsx"
+      ],
+      "closureWithCss": [
+        "src/patterns/action-bar.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "EmptyState",
+      "type": "pattern",
+      "files": [
+        "src/patterns/empty-state.tsx"
+      ],
+      "closure": [
+        "src/patterns/empty-state.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/patterns/empty-state.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "PageShell",
+      "type": "pattern",
+      "files": [
+        "src/patterns/page-shell.tsx"
+      ],
+      "closure": [
+        "src/patterns/page-shell.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/patterns/page-shell.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "name": "AppFrame",
+      "type": "pattern",
+      "files": [
+        "src/patterns/app-frame.tsx"
+      ],
+      "closure": [
+        "src/patterns/app-frame.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/patterns/app-frame.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "AppHeader",
+      "type": "pattern",
+      "files": [
+        "src/patterns/app-header.tsx"
+      ],
+      "closure": [
+        "src/patterns/app-header.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/patterns/app-header.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "AppFooter",
+      "type": "pattern",
+      "files": [
+        "src/patterns/app-footer.tsx"
+      ],
+      "closure": [
+        "src/patterns/app-footer.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/patterns/app-footer.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Accordion",
+      "type": "display",
+      "files": [
+        "src/components/accordion.tsx"
+      ],
+      "closure": [
+        "src/components/accordion.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/accordion.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Alert",
+      "type": "feedback",
+      "files": [
+        "src/components/alert.tsx"
+      ],
+      "closure": [
+        "src/components/alert.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/alert.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "AlertDialog",
+      "type": "feedback",
+      "files": [
+        "src/components/alert-dialog.tsx"
+      ],
+      "closure": [
+        "src/components/alert-dialog.tsx",
+        "src/components/button.tsx",
+        "src/components/dialog.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/alert-dialog.tsx",
+        "src/components/button.tsx",
+        "src/components/dialog.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "lucide-react",
+        "react",
+        "react-dom"
+      ]
+    },
+    {
+      "name": "AreaChart",
+      "type": "data",
+      "files": [
+        "src/components/area-chart.tsx"
+      ],
+      "closure": [
+        "src/components/area-chart.tsx",
+        "src/components/line-chart.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/area-chart.tsx",
+        "src/components/line-chart.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "ActionLink",
+      "type": "control",
+      "files": [
+        "src/components/action-link.tsx"
+      ],
+      "closure": [
+        "src/components/action-link.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/action-link.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "AccessList",
+      "type": "trust",
+      "files": [
+        "src/components/access-list.tsx"
+      ],
+      "closure": [
+        "src/components/access-list.tsx",
+        "src/components/avatar.tsx",
+        "src/components/badge.tsx",
+        "src/components/button.tsx",
+        "src/components/select.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/access-list.tsx",
+        "src/components/avatar.tsx",
+        "src/components/badge.tsx",
+        "src/components/button.tsx",
+        "src/components/select.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ActivityLog",
+      "type": "data",
+      "files": [
+        "src/components/activity-log.tsx"
+      ],
+      "closure": [
+        "src/components/activity-log.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/activity-log.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "AspectRatio",
+      "type": "display",
+      "files": [
+        "src/components/aspect-ratio.tsx"
+      ],
+      "closure": [
+        "src/components/aspect-ratio.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/aspect-ratio.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "type": "display",
+      "files": [
+        "src/components/avatar.tsx"
+      ],
+      "closure": [
+        "src/components/avatar.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/avatar.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "BarChart",
+      "type": "data",
+      "files": [
+        "src/components/bar-chart.tsx"
+      ],
+      "closure": [
+        "src/components/bar-chart.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/bar-chart.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Badge",
+      "type": "display",
+      "files": [
+        "src/components/badge.tsx"
+      ],
+      "closure": [
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "BulkActionBar",
+      "type": "control",
+      "files": [
+        "src/components/bulk-action-bar.tsx"
+      ],
+      "closure": [
+        "src/components/bulk-action-bar.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/bulk-action-bar.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Breadcrumbs",
+      "type": "navigation",
+      "files": [
+        "src/components/breadcrumbs.tsx"
+      ],
+      "closure": [
+        "src/components/breadcrumbs.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/breadcrumbs.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "BreadcrumbSlot",
+      "type": "navigation",
+      "files": [
+        "src/components/breadcrumbs.tsx"
+      ],
+      "closure": [
+        "src/components/breadcrumbs.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/breadcrumbs.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Button",
+      "type": "control",
+      "files": [
+        "src/components/button.tsx"
+      ],
+      "closure": [
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "IconButton",
+      "type": "control",
+      "files": [
+        "src/components/button.tsx"
+      ],
+      "closure": [
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ButtonGroup",
+      "type": "control",
+      "files": [
+        "src/components/button-group.tsx"
+      ],
+      "closure": [
+        "src/components/button-group.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/button-group.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "CalendarMonth",
+      "type": "display",
+      "files": [
+        "src/components/calendar-month.tsx"
+      ],
+      "closure": [
+        "src/components/calendar-month.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/calendar-month.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "Card",
+      "type": "display",
+      "files": [
+        "src/components/card.tsx"
+      ],
+      "closure": [
+        "src/components/card.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/card.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "type": "form",
+      "files": [
+        "src/components/checkbox.tsx"
+      ],
+      "closure": [
+        "src/components/checkbox.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/checkbox.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "CheckboxField",
+      "type": "form",
+      "files": [
+        "src/components/checkbox.tsx"
+      ],
+      "closure": [
+        "src/components/checkbox.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/checkbox.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "CharacterCount",
+      "type": "form",
+      "files": [
+        "src/components/character-count.tsx"
+      ],
+      "closure": [
+        "src/components/character-count.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/character-count.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ChangeReview",
+      "type": "display",
+      "files": [
+        "src/components/change-review.tsx"
+      ],
+      "closure": [
+        "src/components/change-review.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/change-review.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ChoiceTile",
+      "type": "control",
+      "files": [
+        "src/components/choice-tile.tsx"
+      ],
+      "closure": [
+        "src/components/choice-tile.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/choice-tile.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "CodeBlock",
+      "type": "data",
+      "files": [
+        "src/components/code-block.tsx"
+      ],
+      "closure": [
+        "src/components/code-block.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/code-block.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "type": "display",
+      "files": [
+        "src/components/collapsible.tsx"
+      ],
+      "closure": [
+        "src/components/collapsible.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/collapsible.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ComparisonList",
+      "type": "display",
+      "files": [
+        "src/components/comparison-list.tsx"
+      ],
+      "closure": [
+        "src/components/comparison-list.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/comparison-list.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Combobox",
+      "type": "form",
+      "files": [
+        "src/components/combobox.tsx"
+      ],
+      "closure": [
+        "src/components/combobox.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/combobox.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ConfidencePanel",
+      "type": "trust",
+      "files": [
+        "src/components/confidence-panel.tsx"
+      ],
+      "closure": [
+        "src/components/confidence-panel.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/confidence-panel.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Command",
+      "type": "control",
+      "files": [
+        "src/components/command.tsx"
+      ],
+      "closure": [
+        "src/components/command.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/command.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ConfirmationPanel",
+      "type": "feedback",
+      "files": [
+        "src/components/confirmation-panel.tsx"
+      ],
+      "closure": [
+        "src/components/confirmation-panel.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/confirmation-panel.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ContextActions",
+      "type": "control",
+      "files": [
+        "src/components/context-actions.tsx"
+      ],
+      "closure": [
+        "src/components/context-actions.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/context-actions.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ConsentPanel",
+      "type": "trust",
+      "files": [
+        "src/components/consent-panel.tsx"
+      ],
+      "closure": [
+        "src/components/consent-panel.tsx",
+        "src/components/badge.tsx",
+        "src/components/checkbox.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/consent-panel.tsx",
+        "src/components/badge.tsx",
+        "src/components/checkbox.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ContrastPair",
+      "type": "data",
+      "files": [
+        "src/components/contrast-pair.tsx"
+      ],
+      "closure": [
+        "src/components/contrast-pair.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/contrast-pair.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "CopyField",
+      "type": "form",
+      "files": [
+        "src/components/copy-field.tsx"
+      ],
+      "closure": [
+        "src/components/copy-field.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/copy-field.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "DataTable",
+      "type": "data",
+      "files": [
+        "src/components/data-table.tsx"
+      ],
+      "closure": [
+        "src/components/data-table.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/data-table.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "DataUseList",
+      "type": "trust",
+      "files": [
+        "src/components/data-use-list.tsx"
+      ],
+      "closure": [
+        "src/components/data-use-list.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/data-use-list.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "DateField",
+      "type": "form",
+      "files": [
+        "src/components/date-time-field.tsx"
+      ],
+      "closure": [
+        "src/components/date-time-field.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/date-time-field.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TimeField",
+      "type": "form",
+      "files": [
+        "src/components/date-time-field.tsx"
+      ],
+      "closure": [
+        "src/components/date-time-field.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/date-time-field.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "DatePicker",
+      "type": "form",
+      "files": [
+        "src/components/date-picker.tsx"
+      ],
+      "closure": [
+        "src/components/date-picker.tsx",
+        "src/components/calendar-month.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/date-picker.tsx",
+        "src/components/calendar-month.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "DetailPanel",
+      "type": "display",
+      "files": [
+        "src/components/detail-panel.tsx"
+      ],
+      "closure": [
+        "src/components/detail-panel.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/detail-panel.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "DecisionList",
+      "type": "control",
+      "files": [
+        "src/components/decision-list.tsx"
+      ],
+      "closure": [
+        "src/components/decision-list.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/decision-list.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "DescriptionList",
+      "type": "data",
+      "files": [
+        "src/components/description-list.tsx"
+      ],
+      "closure": [
+        "src/components/description-list.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/description-list.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ConfirmDialogFooter",
+      "type": "feedback",
+      "files": [
+        "src/components/dialog.tsx"
+      ],
+      "closure": [
+        "src/components/dialog.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/dialog.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "lucide-react",
+        "react",
+        "react-dom"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "type": "feedback",
+      "files": [
+        "src/components/dialog.tsx"
+      ],
+      "closure": [
+        "src/components/dialog.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/dialog.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "lucide-react",
+        "react",
+        "react-dom"
+      ]
+    },
+    {
+      "name": "ErrorSummary",
+      "type": "feedback",
+      "files": [
+        "src/components/error-summary.tsx"
+      ],
+      "closure": [
+        "src/components/error-summary.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/error-summary.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "EvidenceList",
+      "type": "trust",
+      "files": [
+        "src/components/evidence-list.tsx"
+      ],
+      "closure": [
+        "src/components/evidence-list.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/evidence-list.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "FileDrop",
+      "type": "form",
+      "files": [
+        "src/components/file-drop.tsx"
+      ],
+      "closure": [
+        "src/components/file-drop.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/file-drop.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "FieldGroup",
+      "type": "form",
+      "files": [
+        "src/components/field-group.tsx"
+      ],
+      "closure": [
+        "src/components/field-group.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/field-group.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "FilterChips",
+      "type": "form",
+      "files": [
+        "src/components/filter-chips.tsx"
+      ],
+      "closure": [
+        "src/components/filter-chips.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/filter-chips.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "FilterSummary",
+      "type": "display",
+      "files": [
+        "src/components/filter-summary.tsx"
+      ],
+      "closure": [
+        "src/components/filter-summary.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/filter-summary.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "FormField",
+      "type": "form",
+      "files": [
+        "src/components/input.tsx"
+      ],
+      "closure": [
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Input",
+      "type": "form",
+      "files": [
+        "src/components/input.tsx"
+      ],
+      "closure": [
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Textarea",
+      "type": "form",
+      "files": [
+        "src/components/input.tsx"
+      ],
+      "closure": [
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "InputGroup",
+      "type": "form",
+      "files": [
+        "src/components/input-group.tsx"
+      ],
+      "closure": [
+        "src/components/input-group.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/input-group.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "HelpHint",
+      "type": "display",
+      "files": [
+        "src/components/help-hint.tsx"
+      ],
+      "closure": [
+        "src/components/help-hint.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/help-hint.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "HumanReviewPanel",
+      "type": "trust",
+      "files": [
+        "src/components/human-review-panel.tsx"
+      ],
+      "closure": [
+        "src/components/human-review-panel.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/human-review-panel.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "InsetNotice",
+      "type": "display",
+      "files": [
+        "src/components/inset-notice.tsx"
+      ],
+      "closure": [
+        "src/components/inset-notice.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/inset-notice.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "InlineEdit",
+      "type": "form",
+      "files": [
+        "src/components/inline-edit.tsx"
+      ],
+      "closure": [
+        "src/components/inline-edit.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/inline-edit.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "InvitePanel",
+      "type": "trust",
+      "files": [
+        "src/components/invite-panel.tsx"
+      ],
+      "closure": [
+        "src/components/invite-panel.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/components/select.tsx",
+        "src/components/access-list.tsx",
+        "src/lib/cn.ts",
+        "src/components/avatar.tsx",
+        "src/components/badge.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/invite-panel.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/components/select.tsx",
+        "src/components/access-list.tsx",
+        "src/lib/cn.ts",
+        "src/components/avatar.tsx",
+        "src/components/badge.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Item",
+      "type": "display",
+      "files": [
+        "src/components/item.tsx"
+      ],
+      "closure": [
+        "src/components/item.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/item.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ItemGroup",
+      "type": "display",
+      "files": [
+        "src/components/item.tsx"
+      ],
+      "closure": [
+        "src/components/item.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/item.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "JobQueue",
+      "type": "display",
+      "files": [
+        "src/components/job-queue.tsx"
+      ],
+      "closure": [
+        "src/components/job-queue.tsx",
+        "src/components/progress.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/job-queue.tsx",
+        "src/components/progress.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "LineChart",
+      "type": "data",
+      "files": [
+        "src/components/line-chart.tsx"
+      ],
+      "closure": [
+        "src/components/line-chart.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/line-chart.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "ListRow",
+      "type": "display",
+      "files": [
+        "src/components/list-row.tsx"
+      ],
+      "closure": [
+        "src/components/list-row.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/list-row.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "LoadingRegion",
+      "type": "feedback",
+      "files": [
+        "src/components/loading-region.tsx"
+      ],
+      "closure": [
+        "src/components/loading-region.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/loading-region.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "MediaSlot",
+      "type": "display",
+      "files": [
+        "src/components/media-slot.tsx"
+      ],
+      "closure": [
+        "src/components/media-slot.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/media-slot.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Menu",
+      "type": "control",
+      "files": [
+        "src/components/menu.tsx"
+      ],
+      "closure": [
+        "src/components/menu.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/menu.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "MenuBar",
+      "type": "control",
+      "files": [
+        "src/components/menu-bar.tsx"
+      ],
+      "closure": [
+        "src/components/menu-bar.tsx",
+        "src/components/menu.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/menu-bar.tsx",
+        "src/components/menu.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Meter",
+      "type": "data",
+      "files": [
+        "src/components/meter.tsx"
+      ],
+      "closure": [
+        "src/components/meter.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/meter.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "NavigationMenu",
+      "type": "navigation",
+      "files": [
+        "src/components/navigation-menu.tsx"
+      ],
+      "closure": [
+        "src/components/navigation-menu.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/navigation-menu.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "NavigationList",
+      "type": "navigation",
+      "files": [
+        "src/components/navigation-list.tsx"
+      ],
+      "closure": [
+        "src/components/navigation-list.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/navigation-list.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "NativeSelect",
+      "type": "form",
+      "files": [
+        "src/components/native-select.tsx"
+      ],
+      "closure": [
+        "src/components/native-select.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/native-select.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "type": "navigation",
+      "files": [
+        "src/components/pagination.tsx"
+      ],
+      "closure": [
+        "src/components/pagination.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/pagination.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "PageTabs",
+      "type": "navigation",
+      "files": [
+        "src/components/page-tabs.tsx"
+      ],
+      "closure": [
+        "src/components/page-tabs.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/page-tabs.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "PasswordField",
+      "type": "form",
+      "files": [
+        "src/components/password-field.tsx"
+      ],
+      "closure": [
+        "src/components/password-field.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/password-field.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "PermissionPanel",
+      "type": "trust",
+      "files": [
+        "src/components/permission-panel.tsx"
+      ],
+      "closure": [
+        "src/components/permission-panel.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/permission-panel.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Popover",
+      "type": "control",
+      "files": [
+        "src/components/popover.tsx"
+      ],
+      "closure": [
+        "src/components/popover.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/popover.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "PresenceList",
+      "type": "display",
+      "files": [
+        "src/components/presence-list.tsx"
+      ],
+      "closure": [
+        "src/components/presence-list.tsx",
+        "src/components/avatar.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/presence-list.tsx",
+        "src/components/avatar.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Progress",
+      "type": "feedback",
+      "files": [
+        "src/components/progress.tsx"
+      ],
+      "closure": [
+        "src/components/progress.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/progress.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "QualityChecklist",
+      "type": "trust",
+      "files": [
+        "src/components/quality-checklist.tsx"
+      ],
+      "closure": [
+        "src/components/quality-checklist.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/quality-checklist.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "RadioGroup",
+      "type": "form",
+      "files": [
+        "src/components/radio-group.tsx"
+      ],
+      "closure": [
+        "src/components/radio-group.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/radio-group.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "ResultList",
+      "type": "display",
+      "files": [
+        "src/components/result-list.tsx"
+      ],
+      "closure": [
+        "src/components/result-list.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/result-list.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "RequirementList",
+      "type": "trust",
+      "files": [
+        "src/components/requirement-list.tsx"
+      ],
+      "closure": [
+        "src/components/requirement-list.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/requirement-list.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ReleaseGate",
+      "type": "trust",
+      "files": [
+        "src/components/release-gate.tsx"
+      ],
+      "closure": [
+        "src/components/release-gate.tsx",
+        "src/components/badge.tsx",
+        "src/components/button.tsx",
+        "src/components/progress.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/release-gate.tsx",
+        "src/components/badge.tsx",
+        "src/components/button.tsx",
+        "src/components/progress.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ResizablePanels",
+      "type": "layout",
+      "files": [
+        "src/components/resizable-panels.tsx"
+      ],
+      "closure": [
+        "src/components/resizable-panels.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/resizable-panels.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "RetryPanel",
+      "type": "feedback",
+      "files": [
+        "src/components/retry-panel.tsx"
+      ],
+      "closure": [
+        "src/components/retry-panel.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/retry-panel.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Kbd",
+      "type": "data",
+      "files": [
+        "src/components/kbd.tsx"
+      ],
+      "closure": [
+        "src/components/kbd.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/kbd.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "NumberStepper",
+      "type": "form",
+      "files": [
+        "src/components/number-stepper.tsx"
+      ],
+      "closure": [
+        "src/components/number-stepper.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/number-stepper.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "OtpInput",
+      "type": "form",
+      "files": [
+        "src/components/otp-input.tsx"
+      ],
+      "closure": [
+        "src/components/otp-input.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/otp-input.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SectionBreak",
+      "type": "display",
+      "files": [
+        "src/components/section-break.tsx"
+      ],
+      "closure": [
+        "src/components/section-break.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/section-break.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SearchField",
+      "type": "form",
+      "files": [
+        "src/components/search-field.tsx"
+      ],
+      "closure": [
+        "src/components/search-field.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/search-field.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SaveStatus",
+      "type": "feedback",
+      "files": [
+        "src/components/save-status.tsx"
+      ],
+      "closure": [
+        "src/components/save-status.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/save-status.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SegmentedControl",
+      "type": "form",
+      "files": [
+        "src/components/segmented-control.tsx"
+      ],
+      "closure": [
+        "src/components/segmented-control.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/segmented-control.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "Select",
+      "type": "form",
+      "files": [
+        "src/components/select.tsx"
+      ],
+      "closure": [
+        "src/components/select.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/select.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SelectionList",
+      "type": "form",
+      "files": [
+        "src/components/selection-list.tsx"
+      ],
+      "closure": [
+        "src/components/selection-list.tsx",
+        "src/components/checkbox.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/selection-list.tsx",
+        "src/components/checkbox.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ShareSummary",
+      "type": "trust",
+      "files": [
+        "src/components/share-summary.tsx"
+      ],
+      "closure": [
+        "src/components/share-summary.tsx",
+        "src/components/button.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/share-summary.tsx",
+        "src/components/button.tsx",
+        "src/components/badge.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "type": "navigation",
+      "files": [
+        "src/components/sidebar.tsx"
+      ],
+      "closure": [
+        "src/components/sidebar.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/sidebar.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ShortcutList",
+      "type": "display",
+      "files": [
+        "src/components/shortcut-list.tsx"
+      ],
+      "closure": [
+        "src/components/shortcut-list.tsx",
+        "src/components/kbd.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/shortcut-list.tsx",
+        "src/components/kbd.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "type": "feedback",
+      "files": [
+        "src/components/skeleton.tsx"
+      ],
+      "closure": [
+        "src/components/skeleton.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/skeleton.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SkipLink",
+      "type": "navigation",
+      "files": [
+        "src/components/skip-link.tsx"
+      ],
+      "closure": [
+        "src/components/skip-link.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/skip-link.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ScrollArea",
+      "type": "layout",
+      "files": [
+        "src/components/scroll-area.tsx"
+      ],
+      "closure": [
+        "src/components/scroll-area.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/scroll-area.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SplitView",
+      "type": "layout",
+      "files": [
+        "src/components/split-view.tsx"
+      ],
+      "closure": [
+        "src/components/split-view.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/split-view.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Slider",
+      "type": "form",
+      "files": [
+        "src/components/slider.tsx"
+      ],
+      "closure": [
+        "src/components/slider.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/slider.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SliderField",
+      "type": "form",
+      "files": [
+        "src/components/slider.tsx"
+      ],
+      "closure": [
+        "src/components/slider.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/slider.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Stat",
+      "type": "data",
+      "files": [
+        "src/components/stat.tsx"
+      ],
+      "closure": [
+        "src/components/stat.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/stat.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SortControl",
+      "type": "form",
+      "files": [
+        "src/components/sort-control.tsx"
+      ],
+      "closure": [
+        "src/components/sort-control.tsx",
+        "src/components/select.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/sort-control.tsx",
+        "src/components/select.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "StatusBanner",
+      "type": "feedback",
+      "files": [
+        "src/components/status-banner.tsx"
+      ],
+      "closure": [
+        "src/components/status-banner.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/status-banner.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SuggestionList",
+      "type": "trust",
+      "files": [
+        "src/components/suggestion-list.tsx"
+      ],
+      "closure": [
+        "src/components/suggestion-list.tsx",
+        "src/components/badge.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/suggestion-list.tsx",
+        "src/components/badge.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Spinner",
+      "type": "feedback",
+      "files": [
+        "src/components/spinner.tsx"
+      ],
+      "closure": [
+        "src/components/spinner.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/spinner.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SwatchPicker",
+      "type": "form",
+      "files": [
+        "src/components/swatch-picker.tsx"
+      ],
+      "closure": [
+        "src/components/swatch-picker.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/swatch-picker.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "SummaryCard",
+      "type": "display",
+      "files": [
+        "src/components/summary-card.tsx"
+      ],
+      "closure": [
+        "src/components/summary-card.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/summary-card.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Stepper",
+      "type": "display",
+      "files": [
+        "src/components/stepper.tsx"
+      ],
+      "closure": [
+        "src/components/stepper.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/stepper.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Switch",
+      "type": "form",
+      "files": [
+        "src/components/switch.tsx"
+      ],
+      "closure": [
+        "src/components/switch.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/switch.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "SwitchField",
+      "type": "form",
+      "files": [
+        "src/components/switch.tsx"
+      ],
+      "closure": [
+        "src/components/switch.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/switch.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "type": "navigation",
+      "files": [
+        "src/components/tabs.tsx"
+      ],
+      "closure": [
+        "src/components/tabs.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/tabs.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Table",
+      "type": "data",
+      "files": [
+        "src/components/table.tsx"
+      ],
+      "closure": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TableBody",
+      "type": "data",
+      "files": [
+        "src/components/table.tsx"
+      ],
+      "closure": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TableCaption",
+      "type": "data",
+      "files": [
+        "src/components/table.tsx"
+      ],
+      "closure": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TableCell",
+      "type": "data",
+      "files": [
+        "src/components/table.tsx"
+      ],
+      "closure": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TableHead",
+      "type": "data",
+      "files": [
+        "src/components/table.tsx"
+      ],
+      "closure": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TableHeader",
+      "type": "data",
+      "files": [
+        "src/components/table.tsx"
+      ],
+      "closure": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TableRow",
+      "type": "data",
+      "files": [
+        "src/components/table.tsx"
+      ],
+      "closure": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/table.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TaskList",
+      "type": "display",
+      "files": [
+        "src/components/task-list.tsx"
+      ],
+      "closure": [
+        "src/components/task-list.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/task-list.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "TagInput",
+      "type": "form",
+      "files": [
+        "src/components/tag-input.tsx"
+      ],
+      "closure": [
+        "src/components/tag-input.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/tag-input.tsx",
+        "src/components/button.tsx",
+        "src/components/input.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Toolbar",
+      "type": "control",
+      "files": [
+        "src/components/toolbar.tsx"
+      ],
+      "closure": [
+        "src/components/toolbar.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/toolbar.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "type": "display",
+      "files": [
+        "src/components/tooltip.tsx"
+      ],
+      "closure": [
+        "src/components/tooltip.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/tooltip.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ToggleGroup",
+      "type": "form",
+      "files": [
+        "src/components/toggle-group.tsx"
+      ],
+      "closure": [
+        "src/components/toggle-group.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/toggle-group.tsx",
+        "src/styles.css"
+      ],
+      "packages": []
+    },
+    {
+      "name": "Timeline",
+      "type": "data",
+      "files": [
+        "src/components/timeline.tsx"
+      ],
+      "closure": [
+        "src/components/timeline.tsx"
+      ],
+      "closureWithCss": [
+        "src/components/timeline.tsx",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "UndoNotice",
+      "type": "feedback",
+      "files": [
+        "src/components/undo-notice.tsx"
+      ],
+      "closure": [
+        "src/components/undo-notice.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/undo-notice.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Heading",
+      "type": "display",
+      "files": [
+        "src/components/typography.tsx"
+      ],
+      "closure": [
+        "src/components/typography.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/typography.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "Prose",
+      "type": "display",
+      "files": [
+        "src/components/typography.tsx"
+      ],
+      "closure": [
+        "src/components/typography.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/typography.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    },
+    {
+      "name": "ToastProvider",
+      "type": "feedback",
+      "files": [
+        "src/components/toast.tsx"
+      ],
+      "closure": [
+        "src/components/toast.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/toast.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "name": "Toaster",
+      "type": "feedback",
+      "files": [
+        "src/components/toast.tsx"
+      ],
+      "closure": [
+        "src/components/toast.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/toast.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "name": "useToasts",
+      "type": "feedback",
+      "files": [
+        "src/components/toast.tsx"
+      ],
+      "closure": [
+        "src/components/toast.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/components/toast.tsx",
+        "src/components/button.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "lucide-react",
+        "react"
+      ]
+    },
+    {
+      "name": "ThemeScope",
+      "type": "layout",
+      "files": [
+        "src/theme/theme-scope.tsx"
+      ],
+      "closure": [
+        "src/theme/theme-scope.tsx",
+        "src/lib/cn.ts"
+      ],
+      "closureWithCss": [
+        "src/theme/theme-scope.tsx",
+        "src/lib/cn.ts",
+        "src/styles.css"
+      ],
+      "packages": [
+        "react"
+      ]
+    }
+  ]
+}
